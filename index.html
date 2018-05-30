@@ -9,40 +9,45 @@ LICENSE file in the root directory of this source tree.
 -->
 <html>
   <head>
-    <title>Messenger Demo</title>
+    <title>SendMessage</title>
+     <link href="css/site.css" rel="stylesheet">
   </head>
-  <body>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId: '1670737366292969',
-          xfbml: true,
-          version: 'v2.6'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <h1>Messenger Demo</h1>
-
-    <div>
-      <p>The "Send to Messenger" plugin will trigger an authentication callback to your webhook.</p>
-
-      <div class="fb-send-to-messenger" 
-        messenger_app_id='1670737366292969'
-        page_id='2157245851228516'
-        data-ref="PASS_THROUGH_PARAM" 
-        color="blue" 
-        size="standard">
+   <body class="centered-wrapper">
+      <div class="centered-content">
+         <div>
+            <h1>GET 10% OFF</h1>
+            <br>
+            <h2>your first purchase</h2>
+            <h2>through chat</h2>
+            <br>
+            <h3>Rest easy and sleep well.</h3>
+            <h3>Always.</h3>
+            <h6>Reordering is Easy with Facebook Messenger. Connect with us today and don't miss another minute of restful slumber.</h6>
+         </div>
+         <div class="sendToMessage">
+            <h3>FACEBOOK MESSENGER</h3>
+            <div class="fb-send-to-messenger" 
+               messenger_app_id='1689367291157704'
+               page_id='188378445324509'
+               data-ref="PASS_THROUGH_PARAM" 
+               color="blue" 
+               size="standard">
+            </div>
+         </div>
+         <div>
+            <h6>* We will never post to Facebook on your behalf</h6>
+            <button onclick="togglediv('toggle_container')">Don't have FB Messenger?</button>  
+            <div id ="toggle_container" style="display: none;">
+               <br>
+               <form>  
+                  <label for="SMS">Use SMS MESSAGE(TEXT)</label>
+                  <input type="text"id="SMS"  name="SMS" placeholder="Enter SMS"><br>
+                  <input type="submit" value="Confirm">
+               </form>
+            </div>
+            <h5>Terms & Conditions Apply. By activating reminders and messages via Facebook, you agree to receive Facebook Messenger marketing related messages from Klova. Standard mobile rates may apply. Once you opt in, you may use HELP for help or OPT OUT to cancel at any time.</h5>
+         </div>
       </div>
-    </div> 
-
-  </body>
+      <script src="javascript/webScript.js"></script>
+   </body>
 </html>

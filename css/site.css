@@ -1,0 +1,80 @@
+html{
+   background: url('https://cdn.shopify.com/s/files/1/2065/0707/files/bedtime-P4HSL26.jpg?11975615328771783216') 0 0  no-repeat; 
+   background-position: center center;
+   padding: 0px 5px 0px 5px;
+   background-size: 80% 100%;
+   width: 700px;
+   height: 900px; 
+   font-family:  Roboto, Raleway, Arial;
+}
+
+body {
+  height: 70%;
+  width : 50%;
+  margin: 0 auto; 
+  margin-top: 8em;
+  padding: 10px 10px 10px 10px;
+  vertical-align: middle;
+  font-family:  Roboto, Raleway, Arial;
+}
+h1 {
+  
+  color: #6660aa;
+}
+h2 {
+  color: black;
+  line-height: 50%;
+}
+h3 {
+  color: black;
+}
+h5 {
+  color: #808080;
+  text-align: left;
+  font-size: 10px;
+}
+h6 {
+  color: #808080;
+}
+div {
+  margin: 0 auto;   
+}
+.centered-wrapper {
+    position: relative;
+    text-align: center;
+}
+.centered-wrapper:before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.centered-content {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+}
+.sendToMessage {
+  border: 1px solid black;
+  margin: 10px 15px 10px 15px;
+}
+button {
+   border: none;
+   background: none;
+   color: #6660aa;
+   font-size: 20px;
+}
+label {
+  font-size: 20px;
+}
+input {
+    width: 50%;    
+}
+input[type=submit] {
+    background-color: white; 
+    color: black;
+    border: 1px solid #e7e7e7;   
+    width: 20%;
+    margin-right: 30%;
+}
+
